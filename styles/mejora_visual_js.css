@@ -1,0 +1,109 @@
+:root {
+    --bg-00: #0f0f0f;
+    --bg-01: #242F49;
+    --middle-00: #48608d;
+    --middle-01: #4ed8ba;
+    --front-00: #b52b2b;
+    --front-01: rgb(108, 10, 10); 
+}
+.lower_title_text {
+    font-size: 0.5em;
+}
+.lower_title_button {
+    font-size: 0.7em;
+}
+#salto_linea {
+    height: 5px;
+}
+#name_sis_accor {
+    margin-top: 15px;
+}
+#button_container {
+    align-self: center;
+}
+#button_container {
+    margin-top: 20px;
+}
+#button_container #recursos .col-sm-4 {
+    border: 2px solid black;
+    color: white;
+    background: linear-gradient(var(--bg-01), var(--middle-00));
+    border-radius: 20px;
+    height: 85px;
+}
+
+/*tras cambio se trata de inf en planeta*/
+#elegir_planeta #button_container .row button {
+    border-radius: 20px;
+    background: linear-gradient(rgb(66, 4, 66), var(--front-01));
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+    border: 2px solid black;
+    height: 3.5em;
+    width: 6.7em;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 0.9em;
+}
+#elegir_planeta #button_container .row .row {
+    display: inline-flex;
+    color: white;
+    font-size: 0.6em;
+    margin-right: 10px;
+}
+#elegir_planeta #button_container .row button:hover  {
+    border: 2px solid purple;
+    text-shadow: 2px 2px 2px purple;
+    color: pink;
+}
+#elegir_planeta #button_container .row button:active {
+    background: linear-gradient(var(--front-01), var(--front-00));
+    transition: 0.3s;
+}
+#solar_img {
+    background: url('../assets/bgs/Space\ Background.png');
+    border-radius: 20px;
+    padding: 5%;
+}
+/*sprites*/
+#planet1_sprite {
+    background: url('../assets/planet_sprites/tierra.png');
+    height: 204px;
+    width: 202.0266666px;
+    animation: planet75 steps(75) 20s infinite;
+}
+#planet2_sprite {
+    background: url('../assets/planet_sprites/lava.png');
+    height: 204px;
+    width: 202.0266666px;
+    animation: planet75 steps(75) 20s infinite;
+}
+#planet3_sprite {
+    background: url('../assets/planet_sprites/marte.png');
+    height: 204px;
+    width: 202.0266666px;
+    animation: planet75 steps(75) 20s infinite;
+}
+#planet4_sprite {
+    background: url('../assets/planet_sprites/moon.png');
+    height: 204px;
+    width: 202.0266666px;
+    animation: planet75 steps(75) 20s infinite;
+}
+#planet5_sprite {
+    background: url('../assets/planet_sprites/ice.png');
+    height: 204px;
+    width: 202.0266666px;
+    animation: planet75 steps(75) 20s infinite;
+}
+#planet6_sprite {
+    background: url('../assets/planet_sprites/sat.png');
+    height: 204px;
+    width: 202.0266666px;
+    animation: planet75 steps(75) 20s infinite;
+}
+
+@keyframes planet75 {
+    from{background-position: 0px;}
+    to{background-position: -15152px;}
+}

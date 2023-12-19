@@ -1,0 +1,91 @@
+                        <center>
+                            <div id="button_container" class="container">
+                                <div id="recursos" class="row">
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Neomat</div><div id="neomat_icon"><div id="count_neomat_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Tierras Raras</div><div id="tier_raras_icon"><div id="count_tier_raras_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Hidrogeno</div><div id="hidrogen_icon"><div id="count_hidrogeno_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Ciencia</div><div id="science_icon"><div id="count_ciencia_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Energia</div><div id="energy_icon"><div id="count_energia_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text"></div><div id="cohete_anim"><div id="count_cohetes_t"></div></div></div>
+                                </div>
+                                <hr>
+                                <div id="botones_row_compra" class="row">
+                                    <!--Granja neomateriales--> 
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="comp_granja_neoMat()"> <div class="lower_title_button">Granja Neomat<div id="inf_neomat_tier"></div> </div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="science_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="tier_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="energy_test">-50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton Tierras raras-->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="tier_raras_tierra()"><div class="lower_title_button">tierras raras <div id="inf_tier_raras"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="science_32">-10</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="hidro_32">-20</div>   
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="energy_test">-50</div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton Hidrogeno -->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="centro_hidrogeno_tierra()"><div class="lower_title_button"> Hidrogeno<div id="inf_hidro_tierra"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="neomat_32">-20</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="tier_32">-20</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="energy_test">-50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton laboratorio -->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="lab_tierra_comp()"><div class="lower_title_button">Laboratorio <div id="inf_lab_tierra"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="tier_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="neomat_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="hidro_32">-50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton fusion fria -->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="fusion_fria_tierra()"><div class="lower_title_button">fusion fria <div id="inf_fusion_fria_tierra"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="science_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="neomat_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="hidro_32">-50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton lanz cohetes falta incorporar cosas pensar en como hacer esto-->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="lanzar_y_animar_cohete()"><div class="lower_title_button">Lanzar cohete</div></button>
+                                        <div class="row"><div class="col">&nbsp;&nbsp;&nbsp;&nbsp;Todos -500</div></div>
+                                    </div>
+                                </div>
+                             </div>
+                        </center> 
+                    </div>
+                </center>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersistem_recursos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../InterSistem_recursos/styles/styles.css">
+    <link rel="stylesheet" href="../InterSistem_recursos/styles/styles_bajo.css">
+    <link rel="stylesheet" href="./styles/mejora_visual_js.css">
+    <link rel="stylesheet" href="./styles/icons.css">
+    <!--Space invader-->
+    <link rel="stylesheet" href="./styles/space_invader.css">
+    <!--contador tierra-->
+    <script src="./js/tierra.js"></script>
+    <!--mars-->
+    <script src="./js/mars.js"></script>
+    <!--Sis-->
+    <script src="../InterSistem_recursos/js/System_img_desc.js"></script>
+</head>
+<body onload="cargar_recursos_tierra()">
+<div class="container">
+    <!--Header-->
+    <div id="header" class="row">
+        <div class="row">
+            <h1>Intersistem Recursos</h1>
+        </div>
+        <div class="row">
+            <div class="col-10"></div>
+            <div class="col-1"><a id="profile" href="./pages/perfil.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg></a></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <a href="./pages/marketplace.html">
+                    &nbsp;
+                    Marketplace
+                    &nbsp;
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <a href="./pages/scoreboard.html">
+                    &nbsp;
+                    Scoreboard
+                    &nbsp;
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Elegir Planeta-->
+    <div class="container">
+            <div id="header2" class="row">
+                <h3>Selector de planetas</h3>
+            </div>
+            <div id="solar_sistem_select" class="row">
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <center>
+                            <button onclick="updateDescription(planeta1_inf); updateButtons(planet1Data); updateSprite(planet1Sprite); cargar_recursos_tierra();">Tierra</button>
+                        </center>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <center>
+                            <button onclick="updateDescription(planeta2_inf); updateButtons(planet2Data); updateSprite(planet2Sprite); cargar_recursos_marte();">Marte</button>
+                        </center>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <center>
+                            <button onclick="updateDescription(planeta3_inf); updateButtons(planet3Data); updateSprite(planet3Sprite);">Kepler</button>
+                        </center>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <center>
+                            <button onclick="updateDescription(planeta4_inf);  updateButtons(planet4Data); updateSprite(planet4Sprite);">Asdran</button>
+                        </center>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <center>
+                            <button onclick="updateDescription(planeta5_inf);  updateButtons(planet5Data); updateSprite(planet5Sprite);">Sirius</button>
+                        </center>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-2">
+                        <center>
+                            <button onclick="updateDescription(planeta6_inf);  updateButtons(planet6Data); updateSprite(planet6Sprite);">Emilio</button>
+                        </center>
+                    </div>                        
+            </div>
+    </div>
+    </div>
+    <!--sprites y  planetas-->
+    <div id="img" class="container">
+        <div id="main" class="row">
+            <div class="col-md-12 col-sm-12">
+                <div id="Sistema_solar" class="container">
+                    <div id="description_sis" class="row"><h3>Tierra</h3></div>
+                    <!--aqui va el sprite-->
+                    <div id="solar_img" class="row">
+                        <center><div id="planet1_sprite"></div></center>
+                    </div>        
+                </div>                
+            </div>
+            <!--select planetas-->
+            <div class="col-12">
+                <center>
+                    <div id="elegir_planeta" class="container">
+                        <center>
+                            <div id="button_container" class="container">
+                                <div id="recursos" class="row">
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Neomat</div><div id="neomat_icon"><div id="count_neomat_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Tierras Raras</div><div id="tier_raras_icon"><div id="count_tier_raras_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Hidrogeno</div><div id="hidrogen_icon"><div id="count_hidrogeno_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Ciencia</div><div id="science_icon"><div id="count_ciencia_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text">Energia</div><div id="energy_icon"><div id="count_energia_t"></div></div></div>
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-4"><div id="salto_linea"></div><div class="lower_title_text"></div><div id="cohete_anim"><div id="count_cohetes_t"></div></div></div>
+                                </div>
+                                <hr>
+                                <div id="botones_row_compra" class="row">
+                                    <!--Granja neomateriales--> 
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="comp_granja_neoMat()"> <div class="lower_title_button">Granja Neomat<div id="inf_neomat_tier"></div> </div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="science_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="tier_32">-20</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="energy_test">-10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton Tierras raras-->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="tier_raras_tierra()"><div class="lower_title_button">Mina de tierras raras<div id="inf_tier_raras"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="science_32">-10</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="hidro_32">-20</div>   
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="energy_test">-50</div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton Hidrogeno -->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="centro_hidrogeno_tierra()"><div class="lower_title_button">Centro de Hidrogeno<div id="inf_hidro_tierra"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="neomat_32">-20</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="tier_32">-10</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="energy_test">-50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton laboratorio -->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="lab_tierra_comp()"><div class="lower_title_button">Laboratorio <div id="inf_lab_tierra"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="tier_32">-50</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="neomat_32">-20</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="hidro_32">-10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton fusion fria -->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="fusion_fria_tierra()"><div class="lower_title_button">fusion fria<div id="inf_fusion_fria_tierra"></div></div></button>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div id="science_32">-20</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="neomat_32">-10</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div id="hidro_32">-50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- boton lanz cohetes falta incorporar cosas pensar en como hacer esto-->
+                                    <div class="col-sm-4 col-md-2 col-extrasmall-6"><button onclick="lanzar_y_animar_cohete()"><div class="lower_title_button">Lanzar cohete</div></button>
+                                        <div class="row"><div class="col">&nbsp;&nbsp;&nbsp;&nbsp;Todos -500</div></div>
+                                    </div>
+                                </div>
+                             </div>
+                        </center> 
+                    </div>
+                </center>
+                    </div>
+                </center>
+            </div>            
+        </div>
+    </div>
+    <!--Boost juego-->
+    <div class="container">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <a id="button_typ_acor" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Boost Juego <div id="test_xD"></div>
+                            </a>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <div id="boost_container" class="row">
+                                    <div id="boost_col" class="col-lg-6 col-md-12">
+                                        <div id="boost" onclick=" boostButtonClick(), cuentaAtras()"></div>
+                                    </div>
+                                    <div id="boost_comment" class="col-lg-6 col-md-12">
+                                        <div class="row" id="boost_state"><h6>Toque la pelota para conseguir su boost durante 30 segundos</h6></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br>
+    <!--hangar, misiones etc-->
+    <div class="container">
+        <div id="hangar_misiones" class="row">
+            <div class="col-4">
+                <center>
+                    <a href="../InterSistem_recursos/pages/enemigos.html">Enemigos</a>
+                </center>
+            </div>
+            <div class="col-4">
+                <center>
+                   <a href="../InterSistem_recursos/pages/hangar.html">Hangar</a>
+                </center>
+            </div>
+            <div class="col-4">
+                <center>
+                    <a href="../InterSistem_recursos/pages/misiones.html">Misiones</a>
+                </center>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Footer-->
+    <div id="footer" class="container">
+        <div class="row">
+            <div class="col-12">
+                Footer
+            </div>
+        </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+:root {
+    --bg-00: #0f0f0f;
+    --bg-01: #242F49;
+    --middle-00: #48608d;
+    --middle-01: #4ed8ba;
+    --front-00: #b52b2b;
+    --front-01: rgb(108, 10, 10); 
+}
+@media (max-width: 575.98px) {
+    .col-extrasmall-4 {
+      flex: 0 0 33.33333%; /* Esto sería equivalente a col-4 en Bootstrap */
+      max-width: 33.33333%;
+    }
+    .col-extrasmall-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }    
+  }
+@font-face {
+    font-family: robot1;
+    src: url(../assets/fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: robot2;
+    src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: robot3;
+    src: url(../assets/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+body {
+    background-color: var(--bg-00);
+    font-family: robot1;
+}
+#header{
+    text-align: center;
+    background-color: var(--middle-00);
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+#header .row .col-md-6 {
+    margin-top: 20px;
+}
+#header .row .col-md-6 a{
+    text-decoration: none;
+    color: var(--bg-00);
+    padding: 0.2em;
+    border: 1px solid var(--bg-00);
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(aquamarine, var(--middle-01));
+    box-shadow: 4px 4px 4px black;
+}
+#header .row .col-md-6 a:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+    background: linear-gradient(var(--middle-00), aquamarine);
+}
+/*Button profile*/
+#profile {
+    color: var(--middle-01);
+    border: 2px solid black;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 15px;
+    box-shadow: 2px 2px 2px var(--bg-01);
+    background: linear-gradient(var(--middle-00), var(--bg-01));
+
+}
+#profile:hover{
+    color: var(--bg-01);
+    background: linear-gradient(var(--middle-00), var(--middle-01));
+}
+/*upgrade sis solares eleccion */
+.container #header2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:#48608d;
+    padding: 0.4em;
+    border-radius: 20px;
+    text-align: center;
+}
+/* sistemas solares*/
+#img {
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: var(--bg-01);
+}
+#img #main {
+    background-color: var(--middle-00);
+    border: 1px solid black;
+    margin: 1px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+#img #main #Elegir_sistema_solar {
+    background-color: black;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-bottom: 5px;
+}
+/*Esta  es la descripcion del planeta*/
+#description_sis {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2px;
+    background: linear-gradient(aquamarine, var(--middle-01));
+    text-shadow: 2px 2px 2px grey;
+}
+
+#solar_sistem_select {
+    background-color: #242F49;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+    /*Sistemas solares*/
+#solar_sistem_select col-4{
+    background-color:#48608d;
+    padding: 20px;
+}
+#solar_sistem_select .col-4 button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(aquamarine ,var(--middle-01));
+    box-shadow: 2px 2px 2px black;
+}
+#solar_sistem_select .col-4 button:hover {
+    border: none;
+    color: white;
+    border-radius: 20px;
+    align-self: center;
+    transition: 0.3s;
+    background: linear-gradient(grey, var(--bg-01));
+}

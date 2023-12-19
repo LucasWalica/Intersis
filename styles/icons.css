@@ -1,0 +1,164 @@
+#neomat_icon{
+    background: url('../assets/icons_sprites/Neomat_sprite.png');
+    height: 64px;
+    width: 64px;
+    animation: neomat steps(5) 3s infinite;    
+}
+@keyframes neomat {
+    from{background-position: 0px;}
+    to{background-position: -320px;}
+}
+#tier_raras_icon{
+    background: url('../assets/icons_sprites/tierras_raras_sprite.png');
+    height: 64px;
+    width: 64px;
+    animation: tier_raras_sprite steps(10) 2s infinite;
+
+}
+@keyframes tier_raras_sprite {
+    from{background-position: 0px;}
+    to {background-position: -640px;}
+}
+#hidrogen_icon{
+    background: url('../assets/icons_sprites/hidrogeno_sprite.png');
+    height: 64px;
+    width: 64px;
+    animation: hidro steps(5) 2s infinite;
+}
+@keyframes hidro {
+    from{background-position: 0px;}
+    to{background-position: -320px;}
+}
+#energy_icon{
+    background: url('../assets/icons_sprites/Energy_64.png');
+    height: 64px;
+    width: 64px;
+    animation: energy_icon steps(7) 4s infinite;
+}
+@keyframes energy_icon {
+    from{background-position: 0px;}
+    to {background-position: -448px;}
+}
+#science_icon {
+    background: url('../assets/icons_sprites/science_sprite.png');
+    height: 64px;
+    width: 64px;
+    animation: science_icon steps(4) 2s infinite;
+}
+@keyframes science_icon {
+    from {background-position: 0px;}
+    to {background-position: -256px;}
+}
+/*Iconos pequeños*/
+
+#science_32 {
+    background: url('../assets/icons_sprites/science_sprite_32.png');
+    animation: pasos_32_5 steps(5) 2s infinite;
+    height: 32px;
+    width: 32px;
+}
+@keyframes pasos_32_5 {
+    from{background-position: 0px;}
+    to{background-position: -160px;}
+}
+#neomat_32 {
+    background: url('../assets/icons_sprites/Neomat_32.png');
+    height: 32px;
+    width: 32px;
+    animation: pasos_32_5 steps(5) 2s infinite;
+}
+#tier_32 {
+    background: url('../assets/icons_sprites/Tierras_raras_32.png');
+    height: 32px;
+    width: 32px;
+    animation: tier_32 steps(10) 2s infinite;
+}
+@keyframes tier_32 {
+    from{background-position: 0px;}
+    to{background-position: -320px;}
+}
+#hidro_32 {
+    background: url('../assets/icons_sprites/Hidrogen_32.png');
+    height: 32px;
+    width: 32px;
+    animation: pasos_32_5 steps(5) 2s infinite;
+
+}
+#energy_test {
+    background: url('../assets/icons_sprites/Energy_sprite.png');
+    height: 32px;
+    width: 32px;
+    animation: energy_32 steps(7) 2s infinite;
+}
+@keyframes energy_32 {
+    from{background-position: 0px;}
+    to{background-position: -224px;}
+}
+#cohete_anim{
+    background: url('../assets/icons_sprites/rocket.png');
+    height: 64px;
+    width: 64px;
+}
+.cohete-animation {
+    animation: cohete steps(18) 3s;
+}
+@keyframes cohete {
+    from {background-position: 0px;}
+    to {background-position: -1152px;}
+}
+
+/*Icons mars*/
+#rover_icon {
+    background: url('../assets/icons_sprites/rover_64.png');
+    height: 64px;
+    width: 64px;
+    animation: rover steps(16) 3s infinite;
+}
+@keyframes rover {
+    from {background-position: 0px;}
+    to {background-position: -1024px;}
+}
+#geoterm {
+    background: url('../assets/icons_sprites/geoterm_64.png');
+    height: 64px;
+    width: 64px;
+    animation: geoterm steps(9) 4s infinite;
+}
+@keyframes geoterm {
+    from{background-position: 0px;}
+    to{background-position: -576px;}
+}
+
+#planta_icon {
+    background: url(../assets/icons_sprites/Planta_anim.png);
+    height: 64px;
+    width: 64px;
+    animation: planta steps(17) 10s infinite
+}
+@keyframes planta {
+    from{background-position: 0px;}
+    to{ background-position: -1088px;}
+}
+
+#sonda_llega_icon {
+    background: url('../assets/icons_sprites/Rocket_arriving_mars.png');
+    height: 64px;
+    width: 64px;
+    animation: sonda steps(10) 5s infinite;
+    border-radius: 20px;
+}
+@keyframes sonda{
+    from{background-position: 0px;}
+    to{background-position: -640px;}
+}
+
+#astronau {
+    height: 64px;
+    width: 64px;
+    background: url('../assets/icons_sprites/astronaut.png');
+}
+#alien {
+    height: 64px;
+    width: 64px;
+    background: url('../assets/icons_sprites/alien.png');
+}

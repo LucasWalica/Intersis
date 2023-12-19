@@ -1,0 +1,78 @@
+
+:root {
+    --bg-00: #0f0f0f;
+    --bg-01: #242F49;
+    --middle-00: #48608d;
+    --middle-01: #4ed8ba;
+    --front-00: #b52b2b;
+    --front-01: rgb(108, 10, 10); 
+}
+@font-face {
+    font-family: robot1;
+    src: url(../assets/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+body{
+    text-align: center;
+    background: var(--bg-00);
+}
+#title {
+    background-color: var(--middle-00);
+    color: black;
+    border-radius: 15px;
+}
+
+#contenedor_secundario {
+    border: 2px solid #242F49;
+    background-color:  #242F49;
+    color: white;
+    font-family: robot1;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.col-sm-12{
+    border: none;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background: linear-gradient(aquamarine ,var(--middle-01));
+    color: black;
+    text-shadow: 1px 1px 1px gray;
+    border: 2px solid  #242F49;
+}
+
+#none_bg00, #none_bg01 {
+    background: var(--middle-00)!important;
+    border: none;
+    box-shadow: none;
+}
+button {
+    border-radius: 20px;
+    background-color: var(--middle-00);
+    border: 2px solid var(--middle-00);
+}
+button a {
+    text-decoration: none;
+    color: var(--bg-00);
+    padding: 0.2em;
+    border: 1px solid var(--bg-00);
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(aquamarine, var(--middle-01));
+    box-shadow: 4px 4px 4px black;
+}
+button a:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+    background: linear-gradient(var(--middle-00), aquamarine);
+}
+
+#footer {
+    background-color:#242F49;
+    border: 2px solid black;
+    color: aquamarine;
+    border-radius: 20px;
+    padding: 20px;
+    text-shadow: 2px 2px 2px grey;
+}

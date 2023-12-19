@@ -1,0 +1,122 @@
+:root {
+    --bg-00: #0f0f0f;
+    --bg-01: #242F49;
+    --middle-00: #48608d;
+    --middle-01: #4ed8ba;
+    --front-00: #b52b2b;
+    --front-01: rgb(108, 10, 10); 
+}
+@font-face {
+    font-family: robot1;
+    src: url(../assets/fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: robot2;
+    src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: robot3;
+    src: url(../assets/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+/*Accordion*/
+.accordion {
+    padding: 15px;
+    margin-top: 2px;
+    background-color: var(--bg-00);
+    border-radius: 20px;
+
+}
+.accordion .accordion-item {
+    background: black;
+    border-radius: 20px;
+}
+#button_typ_acor {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#button_typ_acor:hover {
+    background: linear-gradient(aquamarine, var(--middle-00));
+    color: black;
+    border: 2px solid black;
+    transition: 0.4s;
+}
+/*boost and boost container*/
+/*implementar space invaders para ganar el boost*/ 
+#boost_container {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+#boost_state {
+    text-align: center;
+    color: greenyellow;
+    text-shadow: 1px 1px 1px green;
+}
+#boost_col {
+    border: 2px solid var(--bg-01);
+    border-radius: 20px;
+    background: linear-gradient(var(--middle-00) ,var(--bg-01));
+}
+#boost_comment {
+    border: 2px solid var(--bg-01);
+    border-radius: 20px;
+    color: greenyellow;
+    text-shadow: 1px 1px 1px green;
+    text-align: center;
+}
+#boost {
+    background: linear-gradient(greenyellow, green);
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    animation: cubeLarge infinite;
+    animation-duration: 3s; 
+}
+
+
+@keyframes cubeLarge{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(20rem);}
+    100% {transform: translateX(0%);}
+}
+
+/*Misiones y tdo eso*/
+#hangar_misiones {
+    background-color: var(--bg-01);
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black;
+    padding: 20px;
+}
+#hangar_misiones .col-4 a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--bg-00);
+    border: 1px solid var(--bg-00);
+    border-radius: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    background: linear-gradient(aquamarine, var(--middle-01));
+    box-shadow: 4px 4px 4px black;
+}
+#hangar_misiones .col-4 a:hover {
+    color: var(--middle-01);
+    transition: 0.4s;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: linear-gradient(var(--middle-00), var(--bg-01));
+}
+#footer {
+    background: linear-gradient(black, grey);
+    padding: 100px;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+

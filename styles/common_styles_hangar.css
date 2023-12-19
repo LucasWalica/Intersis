@@ -1,0 +1,90 @@
+:root {
+    --bg-00: #0f0f0f;
+    --bg-01: #242F49;
+    --middle-00: #48608d;
+    --middle-01: #4ed8ba;
+    --front-00: #b52b2b;
+    --front-01: rgb(108, 10, 10); 
+}  
+@font-face {
+    font-family: robot1;
+    src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+body {
+    background-color: var(--bg-00);
+    font-family: robot1;
+    font-size: 0.8em;
+}
+.container .row  .col-12 {
+    text-align: center;
+    background-color: var(--middle-00);
+    border-radius: 12px;
+}
+.container .row .col-12 h1 {
+    color: black;
+}
+#nav {
+    background-color: var(--bg-01);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+#nav .col-md-4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#nav .col-md-4 a {
+    text-decoration: none;
+    color: var(--bg-00);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 1px solid var(--bg-00);
+    border-radius: 20px;
+    color: var(--bg-00);
+    background: linear-gradient(var(--middle-00), var(--middle-01));
+    box-shadow: 4px 4px 4px black;
+}
+#nav .col-md-4 a:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+    background: linear-gradient(var(--middle-00), var(--bg-01));
+    color: var(--middle-01);
+}
+#contenido {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    /*Ingresar bg color */
+    background-color: white;
+}
+#footer {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 20px;
+    text-shadow: 2px 2px 2px grey;
+}
+
+
+
+/*Button profile*/
+#profile {
+    color: var(--middle-01);
+    border: 2px solid black;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 15px;
+    box-shadow: 2px 2px 2px var(--bg-01);
+    background: linear-gradient(var(--middle-00), var(--bg-01));
+
+}
+#profile:hover{
+    color: var(--bg-01);
+    background: linear-gradient(var(--middle-00), var(--middle-01));
+}
